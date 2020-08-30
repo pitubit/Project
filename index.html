@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">SomaiyaRobo</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="nav-icon ">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <div class="home">Home</div> <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Web Development</a>
+                                <a class="dropdown-item" href="#"> Software Development</a>
+                                <a class="dropdown-item" href="#"> Product Delivery</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ---------------------Navbar over-------------------------- -->
+
+        <!-- --------------------------carousel started----------------------- -->
+        <div id="carouselId1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId1" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId1" data-slide-to="1"></li>
+                <li data-target="#carouselId1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item carousel active">
+                    <img src="img2.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item carousel">
+                    <img src="img3.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item carousel">
+                    <img src="img4.png" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- --------------------------carousel ends--------------------------------- -->
+    </header>
+
+    <!-- ------------------------boxes-------------- -->
+    <div class="boxes row">
+        <div class="box1 col-xl-2 col-lg-4 col-sm-4 col-xs-10">
+            <h2> 113 </h2>
+            <p class="text">Years of exprience</p>
+        </div>
+        <div class="box1 col-xl-2 col-lg-4 col-sm-4 col-xs-10"">
+            <h2> 11 </h2> 
+            <p class=" text">Team Members</p>
+        </div>
+        <div class="box1 col-xl-2 col-lg-4 col-sm-4 col-xs-10"">
+            <h2> 35 </h2>             
+            <p class=" text">Active Client</p>
+        </div>
+        <div class="box1 col-xl-2 col-lg-4 col-sm-4 col-xs-10"">
+            <h2> 234 </h2> 
+            <p class=" text">Success Cases</p>
+        </div>
+    </div>
+    <!-- ---------------------------boxes ends-------------------- -->
+
+    <!-- ###############################cards carousel starts#################### -->
+    <div id="carouselId2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId2" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId2" data-slide-to="1"></li>
+            <li data-target="#carouselId2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner container" role="listbox">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="flip-card ">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Pritam Parui</h1> 
+                                <p>Game developer</p> 
+                                <p>Passionated</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card ">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Deepshika</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img4.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>vandana</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="flip-card ">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Akash</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card ">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Ekta</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img4.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Joy</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="flip-card ">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Binit</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card ">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Ankit</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img4.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Sangam</h1> 
+                                <p>Architect & Engineer</p> 
+                                <p>We love that guy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselId2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- ####################### cards carousel ends########################### -->
+    <div class="title">How We Work?</div>
+    <div class="container work row">
+        <ul class="sidenav col-lg-4 col-xl-4 col-sm-5 col-xs-10">
+            <li> <span>1</span><a href="#call">Call</a></li>
+            <li> <span>2</span><a href="#kickof">Kick off</a></li>
+            <li> <span>3</span><a href="#workshop">Workshop</a></li>
+            <li> <span>4</span><a href="#development">Development</a></li>
+            <li> <span>5</span><a href="#product">Product Launch</a></li>
+        </ul>
+        <div id="call" class="details active col-lg-7 col-xl-7 col-sm-6 col-xs-10">
+            <div class="content">
+                <div class="heading">Call</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit itaque non dolor ea at totam
+                    unde? Itaque modi dolorem reprehenderit ratione magni, deserunt esse aspernatur accusantium quod quo
+                    earum inventore quas voluptatibus consequuntur. Distinctio eius eaque doloribus aliquid officiis
+                    nulla dolores molestias iusto accusantium necessitatibus earum aut quam in veritatis nisi, sed
+                    mollitia. Rem commodi temporibus officii</p>
+            </div>
+        </div>
+        <div id="kickof" class="details col-lg-7 col-xl-7 col-sm-6 col-xs-10">
+            <div class="content">
+                <div class="heading">Kick off</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit itaque non dolor ea at totam
+                    unde? Itaque modi dolorem reprehenderit ratione magni, deserunt esse aspernatur accusantium quod quo
+                    earum inventore quas voluptatibus consequuntur. Distinctio eius eaque doloribus aliquid officiis
+                    nulla dolores molestias iusto accusantium necessitatibus earum aut quam in veritatis nisi, sed
+                    mollitia. Rem commodi temporibus officii</p>
+            </div>
+        </div>
+        <div id="workshop" class="details col-lg-7 col-xl-7 col-sm-6 col-xs-10">
+            <div class="content">
+                <div id="call" class="heading">Workshop</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit itaque non dolor ea at totam
+                    unde? Itaque modi dolorem reprehenderit ratione magni, deserunt esse aspernatur accusantium quod quo
+                    earum inventore quas voluptatibus consequuntur. Distinctio eius eaque doloribus aliquid officiis
+                    nulla dolores molestias iusto accusantium necessitatibus earum aut quam in veritatis nisi, sed
+                    mollitia. Rem commodi temporibus officii</p>
+            </div>
+        </div>
+        <div id="development" class="details col-lg-7 col-xl-7 col-sm-6 col-xs-10">
+            <div class="content">
+                <div id="call" class="heading">Development</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit itaque non dolor ea at totam
+                    unde? Itaque modi dolorem reprehenderit ratione magni, deserunt esse aspernatur accusantium quod quo
+                    earum inventore quas voluptatibus consequuntur. Distinctio eius eaque doloribus aliquid officiis
+                    nulla dolores molestias iusto accusantium necessitatibus earum aut quam in veritatis nisi, sed
+                    mollitia. Rem commodi temporibus officii</p>
+            </div>
+        </div>
+        <div id="product" class="details col-lg-7 col-xl-7 col-sm-6 col-xs-10">
+            <div class="content">
+                <div class="heading">Product</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugit itaque non dolor ea at totam
+                    unde? Itaque modi dolorem reprehenderit ratione magni, deserunt esse aspernatur accusantium quod quo
+                    earum inventore quas voluptatibus consequuntur. Distinctio eius eaque doloribus aliquid officiis
+                    nulla dolores molestias iusto accusantium necessitatibus earum aut quam in veritatis nisi, sed
+                    mollitia. Rem commodi temporibus officii</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------footer------------------------ -->
+    <footer>
+
+    </footer>
+    <script>
+        var navicon = document.getElementsByClassName('nav-icon');
+        navicon[0].addEventListener('click', () => {
+            if (navicon[0].classList.contains('active')) {
+                navicon[0].classList.remove('active')
+            } else {
+                navicon[0].classList.add('active')
+            }
+        })
+        var list = document.getElementsByTagName('li');
+        let boxs=document.querySelectorAll(".details")
+        list.forEach(element => {
+            element.addEventListener('click', () => {
+                element.getAttribte
+                
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

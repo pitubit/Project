@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.nav-icon {
+    display: inline-block;
+    width: 35px;
+    /* padding: 3px; */
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar-toggler {
+    padding: 5px 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 100%;
+    height: 3px;
+    margin: 5px 0;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+.active .bar1 {
+    transform: translateY(8px) rotate(135deg);
+}
+
+.active .bar2 {
+    opacity: 0;
+}
+
+.active .bar3 {
+    transform: translateY(-8px) rotate(-135deg);
+}
+
+.dropdown-menu {
+    background-color: transparent;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.carousel img {
+    width: 100%;
+    height: 90vh;
+}
+
+.boxes {
+    margin: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boxes .box1 {
+    position: relative;
+    font-size: 1.3em;
+    justify-self: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px ;
+    box-shadow: 0 0  10px black;
+}
+.boxes .box1 h2{
+    font-size: 3em;
+    color: tomato;
+}
+.boxes .box1 p{
+    font-weight: 700 ;
+}
+.carousel-item .row{
+    display: flex ;
+    justify-content: space-around;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    color: black;
+    opacity: .9;
+}
+
+.work {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+.title {
+    margin: 100px;
+    height: fit-content;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 2px groove black;
+}
+
+.sidenav {
+    align-self: center;
+    font-size: 1.2em;
+    line-height: 2em;
+    transition: 0.2s ease;
+    width: fit-content;
+}
+
+.sidenav li {
+    padding: 0 20px;
+}
+
+.sidenav li span {
+    border: 2px solid black;
+    padding: 3px 10px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: 0.2s ease;
+}
+
+.sidenav li a {
+    position: relative;
+    transition: 0.2s ease;
+    text-decoration: none;
+    color: black;
+    padding-right: 5px;
+    border-bottom: 0px solid black;
+}
+
+.sidenav li a:hover {
+    border-bottom-style: groove;
+    border-width: 3px;
+}
+
+.work .details {
+    display: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: fit-content;
+    margin: 10px;
+}
+
+.work .active {
+    display: block;
+}
