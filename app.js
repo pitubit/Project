@@ -40,3 +40,20 @@ navicon[0].addEventListener('click', () => {
         navicon[0].classList.add('active')
     }
 });
+var list = document.querySelectorAll('li');
+var section = document.querySelectorAll('.details');
+list.forEach(item=>{
+    item.addEventListener('click',()=>{
+        list.forEach(item=>{
+            item.className="";
+        });
+        item.className="active";
+        let value = item.getAttribute("data-item");
+        section.forEach(element => {
+            element.style.display="none";
+            if(element.getAttribute("data-id")==value){
+                element.style.display="block";
+            }
+        });
+    })
+});

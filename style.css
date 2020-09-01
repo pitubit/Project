@@ -230,13 +230,17 @@ img{
     border-bottom-style: groove;
     border-width: 3px;
 }
-
+.sidenav .active a{
+    border-bottom-style: groove;
+    border-width: 3px;    
+}
 .work .details {
     display: none;
     border: 2px solid black;
     border-radius: 10px;
     height: fit-content;
     margin: 10px;
+    transition: all .2s;
 }
 
 .work .active {
@@ -272,6 +276,7 @@ img{
 .border{
     height: 2px;
     width: 50%;
+    margin-top: -10px;
     border: transparent !important;
     background: #ff9800;
 }
