@@ -3,18 +3,25 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
 }
-
+body{
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+img{
+    width: max-content;
+}
+/* from here, its for three line of nav bar  */
 .nav-icon {
     display: inline-block;
     width: 35px;
     /* padding: 3px; */
 }
-
-ul {
-    list-style: none;
+.bg-dark{
+    background: #222 !important;
 }
-
 .navbar-toggler {
     padding: 5px 10px;
 }
@@ -41,7 +48,9 @@ ul {
 .active .bar3 {
     transform: translateY(-8px) rotate(-135deg);
 }
+/* here endes the nav bar icon  */
 
+/* Dropdown property modification */
 .dropdown-menu {
     background-color: transparent;
 }
@@ -49,14 +58,19 @@ ul {
 .dropdown-item {
     color: white;
 }
-
+/* first carousel modificaton goes form here */
 .carousel img {
     width: 100%;
     height: 90vh;
 }
+.second{
+    height: 90vh;
+}
 
+/* boxes of number of expericene and work goes from here  */
 .boxes {
-    margin: 70px;
+
+    margin: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -70,21 +84,54 @@ ul {
     border: 2px solid black;
     border-radius: 10px;
     margin: 5px;
-    padding: 10px ;
-    box-shadow: 0 0  10px black;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
 }
-.boxes .box1 h2{
+
+.boxes .box1 h2 {
     font-size: 3em;
     color: tomato;
 }
-.boxes .box1 p{
-    font-weight: 700 ;
-}
-.carousel-item .row{
-    display: flex ;
-    justify-content: space-around;
+
+.boxes .box1 p {
+    font-weight: 700;
 }
 
+/* details of our developers goes from here  */
+.card-carousel {
+    margin: 10px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    color: black;
+    background: #eee;
+}
+    /* this is insdie the details of our developer but it is for cards  */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* card flip goes from here  */
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -115,26 +162,26 @@ ul {
     backface-visibility: hidden;
 }
 
+
 .flip-card-front {
     background-color: #bbb;
     color: black;
 }
-
+.flip-card-front img{
+    width: 100%;
+    height: 100%;
+}
 .flip-card-back {
-    background-color: #2980b9;
+    padding: 50px 0;
+    font-size: 1.2em;
+    background: linear-gradient(to right top,blue,deeppink);
     color: white;
     transform: rotateY(180deg);
+    text-transform: capitalize;
 }
-
-.carousel-control-next,
-.carousel-control-prev {
-    color: black;
-    opacity: .9;
-}
-
+/* here details of our developers ends  */
 .work {
     width: 100%;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-content: space-between;
@@ -142,7 +189,7 @@ ul {
 }
 
 .title {
-    margin: 100px;
+    margin: 40px;
     height: fit-content;
     text-align: center;
     font-size: 30px;
@@ -194,4 +241,76 @@ ul {
 
 .work .active {
     display: block;
+}
+.footer{
+    width: 100%;
+    font-size: 1em;
+    background: #00121b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-item{
+    min-height: 100%;
+    padding:10px ;
+    
+}
+.footer-item h1{
+    color: white;
+    transition: all 0.2s;
+}
+.footer-item p{
+    color: #777;
+    transition: all 0.2s;
+}
+.footer-item h2{
+    color: #888;
+    transition: all 0.2s;
+}
+
+.border{
+    height: 2px;
+    width: 50%;
+    border: transparent !important;
+    background: #ff9800;
+}
+.footer-item ul li {
+    margin: 6px 0;
+}
+.footer-item ul li a{
+    color: white;
+    transition: all 0.2s;
+    
+    text-decoration-line: none;
+}
+.footer-item h1:hover,
+.footer-item h2:hover,
+.footer-item p:hover,
+.footer-item ul li a:hover,
+.footer-item ul li:hover{
+    cursor: pointer;
+    color: #ff9800 ;
+    text-shadow: 0 0 5px 15px #ff9800;
+}
+.footer-item ul li i{
+    padding: 5px;
+}
+.footer-item ul li {
+    color: #888;
+}
+.footer-item .social-media ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px;
+    justify-content: space-around;
+}
+.footer-item .social-media ul li{
+    color: #aaa;
+    font-size:2em ;
+    transition: all 0.4s ;
+}
+.footer-item .social-media ul li:hover{
+    color: #ff9800;
+    text-shadow: 0 0 10px 15px #ff9800;
 }
